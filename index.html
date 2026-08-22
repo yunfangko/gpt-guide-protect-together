@@ -1,0 +1,72 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#061226"><title>GPT｜小晴的一天</title><link rel="stylesheet" href="styles.css"></head><body>
+<div class="grain"></div>
+<section class="splash" id="splash">
+  <nav class="landing-nav"><img src="產品相關圖示/產品LOGO.png" alt="GPT"><div><span>產品概念</span><span>核心技術</span><button class="nav-system-link" data-open-system>導盲系統</button></div><button id="startBtnTop" onclick="startJourney()">開啟互動體驗</button></nav>
+  <div class="brand-stage">
+    <div class="brand-art"><img src="產品相關圖示/LOGO&SLOGEN.png" alt="GPT，讓科技牽起你的下一步。"></div>
+    <div class="product-story">
+      <p>AI GUIDE ROBOT · PUPPER V3</p>
+      <h1 class="brand-slogan">讓科技牽起<br>你的下一步</h1>
+      <p class="intro-copy">以 Pupper v3 為 Physical AI Agent，將視覺感知、Guardian AI 與實體牽引整合成一套智慧導盲與生活陪伴系統。</p>
+      <div class="hero-actions"><button class="start-btn" id="startBtn" onclick="startJourney()">體驗 GPT 如何工作 <b>→</b></button><button class="system-page-btn" data-open-system>查看本套系統基本配置 <b>↗</b></button></div>
+      <div class="trust-line"><span>AI 感知</span><i></i><span>安全決策</span><i></i><span>實體引導</span><i></i><span>生活陪伴</span></div>
+    </div>
+  </div>
+  <div class="product-strip"><div><b>GUIDE</b><span>室外、公共運輸與室內<br>不中斷的完整引導</span></div><div><b>PROTECT</b><span>必要時拒絕危險指令<br>重新建立 Safe Corridor</span></div><div><b>TOGETHER</b><span>語音、震動與牽繩<br>把資訊變成實際感受</span></div><div class="hardware-thumb"><div class="product-robot-crop"><img src="產品相關圖示/導盲功能圖示.png" alt="GPT 導盲機器犬產品造型"></div><span>GPT GUIDE ROBOT<br><b>PUPPER V3 CONCEPT</b></span></div></div>
+  <section class="guide-system" id="guideSystem">
+    <button class="system-back" id="backLanding">← 回到產品首頁</button>
+    <div class="guide-system-copy"><p>GUIDE SYSTEM · PRODUCT ECOSYSTEM</p><h2>一套完整的智慧導盲系統</h2><span>從環境感知、安全避障到家人通知，Pupper v3 將資訊轉化成使用者能聽見、感受到並信任的引導。</span><div class="feature-tags"><b>語音互動</b><b>多感測融合</b><b>智慧腕帶</b><b>安全避障</b><b>牽引導航</b><b>家人通知</b><b>手機 App</b><b>緊急求助</b></div><button class="system-cta" data-feature-map>放大查看功能配置 <i>↗</i></button><button class="system-demo-btn" onclick="startJourney()">體驗 GPT <i>→</i></button></div>
+    <button class="guide-system-visual" data-feature-map aria-label="放大查看 GPT 導盲功能圖"><span class="feature-map-stage"><img class="feature-map-base" src="產品相關圖示/導盲功能圖示.png" alt="GPT 導盲系統功能配置：Pupper v3、語音、智慧腕帶、握把、牽引繩、安全避障、導航、家人通知、手機 App 與緊急求助"><i class="persona-replace-mask"></i><i class="student-leash"></i><img class="xiaoqing-student" src="產品相關圖示/小晴-女大生-透明.png" alt="女大生小晴"></span><em>CLICK TO EXPLORE · 點擊放大</em></button>
+  </section>
+</section>
+
+<div class="app hidden" id="app">
+  <header class="app-header">
+    <button class="logo-button" id="homeBtn" aria-label="回到故事首頁"><img src="產品相關圖示/產品LOGO-透明.png" alt="GPT"><span>Guide · Protect · Together<small>引導・守護・同行</small></span></button>
+    <div class="journey-summary"><span>小晴的一天</span><b id="headerScene">01 · 規劃行程</b></div>
+    <div class="status-chips"><span><i></i>PUPPER ONLINE</span><span><i></i>GUARDIAN ARMED</span></div>
+    <button class="sos" id="sosBtn">SOS</button>
+  </header>
+  <div class="progress-track"><i id="journeyProgress"></i></div>
+
+  <main class="story-shell">
+    <aside class="story-rail">
+      <div class="rail-head"><span>JOURNEY</span><b id="sceneIndex">01 / 20</b></div>
+      <div id="sceneRail" class="scene-rail"></div>
+      <div class="guardian-mini"><span>G</span><div><b>Guardian AI</b><small id="safetyLabel">安全狀態：正常</small></div></div>
+    </aside>
+
+    <section class="story-main">
+      <div class="story-title"><div><p id="scenePhase">DEPARTURE · SENSE</p><h1 id="sceneTitle">我要去市立醫院</h1><p id="sceneSubtitle">GPT 正在建立小晴今天的完整旅程。</p></div><div class="location"><small>CURRENT LOCATION</small><b id="locationText">公車站</b></div></div>
+      <nav class="perspectives" aria-label="選擇觀看視角">
+        <button class="active" data-view="god"><span>01</span>上帝視角<small>REALITY</small></button>
+        <button data-view="user"><span>02</span>小晴視角<small>EXPERIENCE</small></button>
+        <button data-view="ai"><span>03</span>Pupper AI<small>REASONING</small></button>
+        <button data-view="compare"><span>＋</span>雙視角<small>COMPARE</small></button>
+      </nav>
+      <div class="viewport" id="viewport" aria-live="polite"></div>
+      <div class="pipeline"><div class="pipeline-label"><span>AI ACTION PIPELINE</span><small>每個行動都經過完整安全決策</small></div><div class="pipeline-steps" id="pipeline"></div></div>
+    </section>
+
+    <aside class="telemetry">
+      <div class="telemetry-head"><span>LIVE SIGNAL</span><i></i></div>
+      <div class="voice-card"><small>EARPHONE · NOW</small><p id="speechText">建議搭乘 307 號公車，預計 2 分鐘後抵達。</p><div class="soundwave"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="signal-grid"><div><small>RISK</small><b id="riskText">LOW</b></div><div><small>DECISION</small><b id="decisionText">PLAN</b></div><div><small>HAPTIC</small><b id="hapticText">READY</b></div><div><small>LEASH</small><b id="leashText">NEUTRAL</b></div></div>
+      <div class="hardware"><h3>MULTIMODAL GUIDANCE</h3><div><span class="hw-icon">◖</span><p><b>Bluetooth Earphone</b><small>語音資訊</small></p><i class="on"></i></div><div><span class="hw-icon">〰</span><p><b>Haptic Leash</b><small>身體方向引導</small></p><i class="on"></i></div><div><span class="hw-icon">▣</span><p><b>Controller</b><small>震動與快捷操作</small></p><i class="on"></i></div></div>
+      <button class="system-map-trigger" data-feature-map><img src="產品相關圖示/導盲功能圖示.png" alt=""><span><small>GUIDE SYSTEM</small><b>查看完整導盲功能</b></span><i>↗</i></button>
+      <blockquote>「不是只讓 Pupper 走得過，<br><b>而是把小晴一起安全帶過去。</b>」</blockquote>
+    </aside>
+  </main>
+</div>
+
+<button class="director-toggle hidden" id="directorToggle"><span>DEMO</span>DIRECTOR <b>⌃</b></button>
+<section class="director hidden" id="director">
+  <div class="director-info"><span>DEMO DIRECTOR</span><b id="directorScene">01 · 規劃行程</b><small id="substepText">STEP 1 / 6 · SENSE</small></div>
+  <div class="director-actions"><button id="prevBtn">←</button><button id="playBtn">▶ AUTO</button><button id="nextBtn" class="next">NEXT →</button><button id="resetBtn">↺</button></div>
+  <select id="jumpSelect" aria-label="跳到場景"></select>
+</section>
+
+<div class="modal hidden" id="sosModal"><div class="modal-card"><button id="closeSos">×</button><span class="sos-ring">SOS</span><p>EMERGENCY MODE</p><h2>啟動緊急求助？</h2><p class="modal-copy">確認後將分享目前 Journey 位置給緊急聯絡人。<b>不會自動報警。</b></p><div class="modal-actions"><button id="cancelSos">取消</button><button id="confirmSos">確認並分享位置</button></div></div></div>
+<div class="feature-modal hidden" id="featureModal" role="dialog" aria-modal="true" aria-label="GPT 導盲功能配置圖"><div class="feature-modal-card"><div class="feature-modal-head"><div><small>GUIDE · PROTECT · TOGETHER</small><b>GPT 智慧導盲系統</b></div><button id="closeFeatureMap" aria-label="關閉導盲功能圖">×</button></div><span class="feature-map-stage"><img class="feature-map-base" src="產品相關圖示/導盲功能圖示.png" alt="GPT 智慧導盲系統完整功能配置圖"><i class="persona-replace-mask"></i><i class="student-leash"></i><img class="xiaoqing-student" src="產品相關圖示/小晴-女大生-透明.png" alt="女大生小晴"></span></div></div>
+<div class="family-toast" id="familyToast"><span>GPT GUARDIAN</span><b>小晴已安全抵達</b><small>Journey completed · SAFE</small></div>
+<script src="app.js"></script></body></html>
